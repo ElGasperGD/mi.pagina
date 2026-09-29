@@ -2,48 +2,129 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- Latest compiled and minified CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, .3);
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .3);
+        }
+
+        .card-header {
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .titulo {
+            text-align: center;
+            color: white;
+            margin: 40px 0;
+        }
+
+        .titulo h1 {
+            font-weight: bold;
+        }
+
+        .titulo p {
+            opacity: .9;
+        }
+    </style>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <div class="container-fluid">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="columnas.html">Columnas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="tarjetas.html">Tarjetas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            #
+                🎬 Mi Sitio Web
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">🏠 Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="columnas.html">📊 Columnas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tarjetas.html">🃏 Tarjetas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Título -->
+    <div class="container">
+        <div class="titulo">
+            <h1>Bienvenido a Mi Sitio</h1>
+            <p>Explora contenido multimedia con un diseño moderno.</p>
+        </div>
+
+        <!-- Card Video -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <div class="card shadow-lg">
+                    <div class="card-header bg-primary text-white">
+                        🎥 Video Destacado
+                    </div>
+
+                    <div class="card-body p-0">
+
+                        <div class="ratio ratio-16x9">
+                            https://www.youtube.com/embed/bnQI3v_MpOs
+                            </iframe>
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer text-center">
+                        <button class="btn btn-primary">
+                            ▶ Ver Más Videos
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
-  </nav>
-  <hr>
-  <div class="container mt-4">
-    <div class="card shadow-lg">
-      <div class="card-header bg-primary text-white">
-        VideoYoutube
-      </div>
-      <div class="card-body p-0">
-        <iframe width="514" height="315" src="https://www.youtube.com/embed/bnQI3v_MpOs?si=V7BpBU6YPr8l3nEF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-  <hr>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
